@@ -507,6 +507,11 @@ PROJECTS
 
 */
 
+li.dots{
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
 .h1__wrapper {
     position: relative;
 }
@@ -515,6 +520,10 @@ PROJECTS
     text-align: center;
     font-size: 48px;
     margin-bottom: 60px;
+}
+
+.project{
+    margin-bottom: 24px;
 }
 
 .project__img {
@@ -715,10 +724,30 @@ width = 80vw
     .modal__half {
         width: 100%;
     }
+    .project__description--para, li.dots{
+        font-size: 12px;
+    }
+    .project__description--title{
+        font-size: 24px;
+    }
+    .project__description--sub-title {
+        font-size: 16px;
+    }
+}
+@media (max-width: 550px) {
+    .project__description--para, li.dots{
+        font-size: 10px;
+    }
+    .project__description--title{
+        font-size: 20px;
+    }
+    .project__description--sub-title {
+        font-size: 14px;
+    }
 }
 
 /* small phones */
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     .title {
         font-size: 52px;
     }
@@ -728,7 +757,7 @@ width = 80vw
     .nav__link:first-child {
         display: none;
     }
-    .project__description--para {
+    .project__description--para, .project__description--list {
         display: none;
     }
     .project__description {
