@@ -514,7 +514,6 @@ li{
 }
 
 li.dots{
-    list-style-type: disc;
     margin-left: 20px;
     align-items: start;
 }
